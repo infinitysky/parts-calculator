@@ -1,0 +1,244 @@
+<div class="row">
+  <br/>
+</div>
+<div class="container-fluid">
+  <!-- Page Heading -->
+  <div class="row">
+    <div class="col-xl-8 col-lg-12">
+
+      <h4>Parts Calculator</h4>
+      <div class="card card-block">
+        <div class="table-responsive">
+          <table class="table">
+            <thead class="thead-inverse">
+            <tr>
+              <th>#</th>
+              <th>Parts</th>
+              <th style="width:20%">Numbers</th>
+              <th style="width:20%">Price</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>CPU</td>
+              <td>
+                <input type="text" class="form-control"
+                       [(ngModel)]="cpuQuantities"
+
+                       (change)="onChange($event)"> <!---->
+
+              </td>
+              <td>
+                <input type="text" class="form-control"
+                       (change)="onChange($event)"
+                       [(ngModel)]="cpuPrice"
+                >
+              </td>
+
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Mother Board</td>
+              <td>
+                <input type="text" class="form-control"
+                       (change)="onChange($event)"
+                       [(ngModel)]="motherBoardQuantities">
+              </td>
+              <td>
+                <input type="text" class="form-control"
+                       (change)="onChange($event)"
+                       [(ngModel)]="motherBoardPrice">
+              </td>
+            </tr>
+
+
+            <tr>
+              <th scope="row">3</th>
+              <td>RAM</td>
+              <td>
+                <input type="text" class="form-control"
+                       (change)="onChange($event)"
+                       [(ngModel)]="ramQuantities">
+              </td>
+              <td>
+                <input type="text" class="form-control"
+                       (change)="onChange($event)"
+                       [(ngModel)]="ramPrice">
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row">4</th>
+              <td>HDD</td>
+              <td>
+                <input type="text" class="form-control"
+                       (change)="onChange($event)"
+                       [(ngModel)]="HDDQuantities">
+              </td>
+              <td>
+                <input type="text" class="form-control"
+                       (change)="onChange($event)"
+                       [(ngModel)]="HDDPrice">
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row">5</th>
+              <td>SSD</td>
+              <td>
+                <input type="text" class="form-control"
+                       (change)="onChange($event)"
+                       [(ngModel)]="SSDQuantities">
+              </td>
+
+              <td>
+                <input type="text" class="form-control"
+                       (change)="onChange($event)"
+                       [(ngModel)]="SSDPrice">
+              </td>
+
+            </tr>
+
+            <tr>
+              <th scope="row">6</th>
+              <td>Graphic Card</td>
+              <td>
+                <input type="text" class="form-control"
+                       (change)="onChange($event)"
+                       [(ngModel)]="graphicCardQuantities">
+              </td>
+              <td>
+                <input type="text" class="form-control"
+                       (change)="onChange($event)"
+                       [(ngModel)]="graphicCardPrice">
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row">7</th>
+              <td>PC Case</td>
+              <td>
+                <input type="text" class="form-control"
+                       (change)="onChange($event)"
+                       [(ngModel)]="pcCaseQuantities">
+              </td>
+              <td>
+                <input type="text" class="form-control"
+                       (change)="onChange($event)"
+                       [(ngModel)]="pcCasePrice">
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row">8</th>
+              <td>Monitor</td>
+              <td>
+                <input type="text" class="form-control"
+                       (change)="onChange($event)"
+                       [(ngModel)]="monitorQuantities">
+              </td>
+              <td>
+                <input type="text" class="form-control"
+                       (change)="onChange($event)"
+                       [(ngModel)]="monitorPrice">
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row">9</th>
+              <td>Operating System</td>
+              <td>
+                <input type="text" class="form-control"
+                       (change)="onChange($event)"
+                       [(ngModel)]="OSQuantities">
+              </td>
+              <td>
+                <input type="text" class="form-control"
+                       (change)="onChange($event)"
+                       [(ngModel)]="OSPrice">
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">10</th>
+              <td>Power Supply</td>
+              <td>
+                <input type="text" class="form-control"
+                       (change)="onChange($event)"
+                       [(ngModel)]="powerQuantities">
+              </td>
+              <td>
+                <input type="text" class="form-control"
+                       (change)="onChange($event)"
+                       [(ngModel)]="powerPrice">
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">11</th>
+              <td>DVD/BD</td>
+              <td>
+                <input type="text" class="form-control"
+                       (change)="onChange($event)"
+                       [(ngModel)]="DVDQuantities">
+              </td>
+              <td>
+                <input type="text" class="form-control"
+                       (change)="onChange($event)"
+                       [(ngModel)]="DVDPrice">
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row">12</th>
+              <td>WIFI Module</td>
+              <td>
+                <input type="text" class="form-control"
+                       (change)="onChange($event)"
+                       [(ngModel)]="wifiQuantities">
+              </td>
+              <td>
+                <input type="text" class="form-control"
+                       (change)="onChange($event)"
+                       [(ngModel)]="wifiPrice">
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">13</th>
+              <td>Others</td>
+              <td>
+                <input type="text" class="form-control"
+                       (change)="onChange($event)"
+                       [(ngModel)]="othersQuantities">
+              </td>
+              <td>
+                <input type="text" class="form-control"
+                       (change)="onChange($event)"
+                       [(ngModel)]="othersPrice">
+              </td>
+            </tr>
+
+
+
+
+            </tbody>
+          </table>
+
+
+
+
+
+
+        </div>
+        <h2>Total: {{totalPrice}}</h2>
+        <div class=" pull-right">
+          <button class="btn btn-primary" (click)="sumTotal()" >Submit</button>
+
+          <button class="btn btn-danger" (click)="cleanData()">Clean</button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
