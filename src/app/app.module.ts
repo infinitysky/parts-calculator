@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppRoutingModule } from './app-routing.module';
+import { DragScrollModule } from 'angular2-drag-scroll';
 
 import { AppComponent } from './app.component';
 import {PartsPriceModule} from './parts-price/parts-price.module';
@@ -14,7 +15,7 @@ import {PartsPriceModule} from './parts-price/parts-price.module';
   imports: [
     PartsPriceModule,
 
-
+    DragScrollModule,
 
     AppRoutingModule,
     BrowserModule,
